@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        small {
+            color: red;
+        }
+    </style>
+
+    <script src="/page/main/department/form-modal.js"></script>
+</head>
+
+<body>
+    <div class="modal fade" id="form-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="form-modal-title">Thêm Phòng Ban</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="department-form">
+                        <div id="form-id-container" class="mb-3">
+                            <label for="form-id" class="form-label">ID</label>
+                            <input type="text" class="form-control form-control-sm" name="form-id" id="form-id"
+                                disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label for="form-name" class="form-label">Tên Phòng Bann</label>
+                            <input type="text" class="form-control form-control-sm" name="form-name" id="form-name"
+                                aria-describedby="form-name-help" placeholder="VD: Giám Đốc">
+                            <small id="form-name-help" class="form-text text-muted">Tên Phòng Ban có tối đa 50 ký
+                                tự.</small>
+                        </div>
+                        <div class="mb-4">
+                            <label for="form-type" class="form-label">Vai trò</label>
+                            <select class="form-select form-select-sm" name="form-type" id="form-type">
+                                <option value="DEV">DEVELOPER</option>
+                                <option value="TEST">TESTER</option>
+                                <option value="SM">SCRUM MASTER</option>
+                                <option value="PM">PROJECT MANAGER</option>
+                            </select>
+                        <div class="mb-3">
+                                <label for="form-totalMembers" class="form-label">Số lượng nhân viên</label>
+                                <input type="text" class="form-control form-control-sm" name="form-totalMembers" id="form-totalMembers"
+                                    aria-describedby="form-totalMembers-help" placeholder="VD: 1">
+                                <small id="form-totalMembers-help" class="form-text text-muted">Nhập Số lượng nhân viên
+                                </small>
+                            </div>
+                
+                        
+                                
+                         
+                
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button id="form-modal-btn-create" type="button" class="btn btn-success">Tạo mới</button>
+                    <button id="form-modal-btn-update" type="button" class="btn btn-warning">Cập nhật</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
